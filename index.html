@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerramientasGratis - Herramientas Online Gratis</title>
+    <meta name="description" content="Herramientas online gratis: compresor de imágenes, generador de contraseñas, conversor de texto, generador de QR y más.">
+    <meta name="keywords" content="herramientas gratis, online, compresor imagen, generador contraseña, convertidor texto, QR">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">🔧 <span>Herramientas</span>Gratis</div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#herramientas">Herramientas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="container">
+        <h1>Herramientas Online <span class="highlight">100% Gratis</span></h1>
+        <p>Utilidades web sin registro, sin límites. Usa las herramientas que necesitas al instante.</p>
+        <a href="#herramientas" class="btn-primary">Ver Herramientas</a>
+    </div>
+</section>
+
+<section id="herramientas" class="tools-grid">
+    <div class="container">
+        <h2>Nuestras Herramientas</h2>
+        <div class="grid">
+            <div class="tool-card" onclick="openTool('counter')">
+                <div class="tool-icon">📝</div>
+                <h3>Contador de Palabras</h3>
+                <p>Cuenta palabras, caracteres, líneas y párrafos de tu texto.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('password')">
+                <div class="tool-icon">🔐</div>
+                <h3>Generador de Contraseñas</h3>
+                <p>Crea contraseñas seguras y aleatorias al instante.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('qr')">
+                <div class="tool-icon">📱</div>
+                <h3>Generador de QR</h3>
+                <p>Genera códigos QR para URLs, textos o contactos.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('text')">
+                <div class="tool-icon">🔄</div>
+                <h3>Convertidor de Texto</h3>
+                <p>Mayúsculas, minúsculas, capitalizar, invertir y más.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('lorem')">
+                <div class="tool-icon">📄</div>
+                <h3>Generador Lorem Ipsum</h3>
+                <p>Genera texto de prueba para tus diseños y proyectos.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('color')">
+                <div class="tool-icon">🎨</div>
+                <h3>Generador de Colores</h3>
+                <p>Crea paletas de colores y obtén códigos HEX, RGB.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('discount')">
+                <div class="tool-icon">💰</div>
+                <h3>Calculadora de Descuentos</h3>
+                <p>Calcula el precio final con descuento rápidamente.</p>
+            </div>
+            <div class="tool-card" onclick="openTool('hash')">
+                <div class="tool-icon">🔒</div>
+                <h3>Generador de Hash</h3>
+                <p>Crea hashes MD5, SHA-1, SHA-256 de cualquier texto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ad-banner">
+    <div class="container">
+        <div class="ad-placeholder">Espacio para publicidad</div>
+    </div>
+</section>
+
+<!-- MODAL HERRAMIENTAS -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<footer id="contacto" class="footer">
+    <div class="container">
+        <p>&copy; 2026 HerramientasGratis. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="tools.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
